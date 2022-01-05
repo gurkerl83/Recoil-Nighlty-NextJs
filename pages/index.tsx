@@ -1,19 +1,5 @@
 import Link from 'next/link';
 import { FC } from 'react';
-import { atom } from 'recoil';
-
-export interface Counter {
-  count: number
-}
-
-const initialState: Counter = {
-  count: 0
-}
-
-export const layoutState = atom({
-  key: 'counter',
-  default: initialState
-})
 
 const Index: FC = () => {
   return (

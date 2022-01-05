@@ -9,14 +9,14 @@ const initialState: Counter = {
   count: 10
 }
 
-const layoutState = atom({
+const counterState = atom({
   key: 'counter',
   default: initialState
 })
 
 const Test: FC = () => {
   // The error occurs when recoil hooks are used.
-  const counter = useRecoilValue(layoutState)
+  const counter = useRecoilValue(counterState)
   return <div>Count is: {counter.count}</div>
 }
 
